@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap');
+
+body{
+    margin: 0;
+}
+
+.scene{
+    height: 100vh;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+.scene.one{
+    background-image: url(img/1.jpg);
+}
+.scene.two{
+    background-image: url(img/2.jpg);
+}
+.scene.three{
+    background-image: url(img/3.jpg);
+}
+
+.scene header{
+    color: #fff;
+    background-color: rgba(0,0,0,0.2);
+    border-top: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    max-width: 50%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    font-weight: 200;
+}
+
+.scene header h1{
+    font-size: 2rem;
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+.scene header ::after{
+    content: '';
+    border-bottom: 1px solid #fff;
+    width: 8rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
